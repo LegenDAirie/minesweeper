@@ -1,8 +1,6 @@
 'use strict';
 
 (function(){
-  // var GLB = window.GLB = window.GLB || {};
-
   var containers = document.getElementsByClassName('container');
 
   var clickedContainer = function (event){

@@ -22,10 +22,12 @@
       return container;
     }
 
-    var makeElement = function(){
+    var makeElement = function(row, col){
       var element = document.createElement('div')
 
       element.classList.add('element');
+      element.classList.add('row' + row)
+      element.classList.add('col' + col)
 
       return element;
     }
@@ -35,7 +37,7 @@
 
       for (var colIdx = 0; colIdx < 8; colIdx++){
         var container = makeContainer();
-        var element = makeElement();
+        var element = makeElement(rowIdx, colIdx);
 
         container.appendChild(element);
         row.appendChild(container);
