@@ -6,7 +6,6 @@
   var GAME_PROTOTYPE = {
     start: function(){
       this.populateMatrix()
-      // this.populateMatrix.bind(this);
     },
 
     populateMatrix: function(){
@@ -15,12 +14,6 @@
 
       this.placeBombs(rowLength, colLength);
       this.placeNumbers(rowLength, colLength);
-
-      // for (var rowIdx = 0; rowIdx < rowLength; rowIdx++){
-      //   for (var colIdx = 0; colIdx < colLength; colIdx++){
-      //
-      //   }
-      // }
     },
 
     placeBombs: function(rowLength, colLength) {
